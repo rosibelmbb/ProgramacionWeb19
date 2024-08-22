@@ -1,0 +1,65 @@
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    
+
+    //Variables
+$color-red: #FF0000
+$color-primario: #794c4c
+$tamano: 20px
+
+h1
+    color: $color-red
+    font-size: $tamano
+
+//Anidamiento 
+
+section
+    height: 40px
+    background-color: $color-red
+    div
+        background-color: $color-primario
+
+.button
+    padding: 20px 10px
+    text-decoration: none
+    &:hover
+        background-color: yellow
+        color: blank
+
+
+@mixin mimixin()
+    color: white
+    background-color: blue
+    
+.miclass
+    @include mimixin()
+
+@mixin Botones($color:green)
+    padding: 10px 20px
+    border-radius: 20px
+    background-color: $color
+
+.btn-aceptar
+    @include Botones($color:red )
+
+.btn-cancelar
+    @include Botones($color:blue )
+    
+
+
+.padre
+    height: 100vh   
+    background-color: black
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    gap: 25px
+    &__parrafo  
+        color: white
+        font-weight: bold
+        font-size: 20px
+    &__parrafo2
+        @extend .padre__parrafo

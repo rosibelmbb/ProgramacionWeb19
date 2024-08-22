@@ -1,0 +1,56 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+//Variables
+
+$Color-principal : #ddf5f296
+$Color-secundario : #0a806e
+$imagendegradado : url(https://img.freepik.com/vector-gratis/fondo-menta-degradado_23-2150246339.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1723507200&semt=ais_hybrid)
+
+
+//Mixin 
+@mixin FlexBox($justify:center,$direccion:column,$aling:center,$gap:20px)
+    display: flex
+    flex-direction: $direccion
+    justify-content: $justify
+    align-items: $aling
+    gap: $gap
+
+ 
+.Form
+    height: 100vh
+    @include FlexBox()
+    background-image: $imagendegradado
+    background-repeat: none
+    background-size: cover
+
+.Form_Contenedor
+    padding: 15px
+    @include FlexBox($gap:7px)
+    width: 600px
+    background-color: $Color-principal
+    border-radius: 20px
+    &__Titulo
+        font-size: 30px
+        color: $Color-secundario
+        font-weight: bold
+        font-family: arial
+    &__Boton
+        padding: 5px 30px
+        color: #ffffff
+        background-color: #1d9c8b
+        border: none
+        border-radius: 5px
+        &:hover
+            background-color: #145a50
+    &__text
+        padding: 2px
+
+//ANIDADOS
+
+
+            
+
+

@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Form {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-image: url(https://img.freepik.com/vector-gratis/fondo-menta-degradado_23-2150246339.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1723507200&semt=ais_hybrid);
+  background-repeat: none;
+  background-size: cover;
+}
+
+.Form_Contenedor {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  width: 600px;
+  background-color: rgba(221, 245, 242, 0.5882352941);
+  border-radius: 20px;
+}
+.Form_Contenedor__Titulo {
+  font-size: 30px;
+  color: #0a806e;
+  font-weight: bold;
+  font-family: arial;
+}
+.Form_Contenedor__Boton {
+  padding: 5px 30px;
+  color: #ffffff;
+  background-color: #1d9c8b;
+  border: none;
+  border-radius: 5px;
+}
+.Form_Contenedor__Boton:hover {
+  background-color: #145a50;
+}
+.Form_Contenedor__text {
+  padding: 2px;
+}
+
+/*# sourceMappingURL=style.css.map */

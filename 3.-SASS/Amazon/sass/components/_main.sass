@@ -1,0 +1,151 @@
+.main
+    background-color: #E3E6E6
+    height: auto
+    background-image: linear-gradient(to top, #E3E6E6,#E3E6E6, #E3E6E6,#E3E6E6, transparent, transparent),url("/images/fondo-main.jpg")
+    background-repeat: no-repeat
+    background-position: center top
+    background-size: 1500px 
+    padding: 260px 25px 15px 25px
+    @include flexbox($gap: 20px)
+    flex-wrap: wrap  
+
+    @for $var from 1 through 20
+        .main__div#{$var} 
+            width: 300px
+            height: 400px
+            background-color: #FFFFFF                 
+            &--titulo1    
+                @include CartTitulo()
+                margin-bottom: 15px
+            &--img1                             
+                width: 260px
+                height: 65%
+                img                    
+                    object-fit: cover
+                    width:100%
+                    height:100%
+                    position: relative
+                    left: 20px
+                    bottom: 20px
+            &--contenedorp
+                @include flexbox($gap: 10px)
+                flex-wrap: wrap
+                margin-top: -20px
+                padding-bottom: 40px
+                div
+                    @include flexbox($direction: column, $align:left) 
+                    
+                    img
+                        width: 130px
+                    span
+                        font-size: 12px
+                        color: #000
+                    
+                                   
+            &--enlace                
+                a
+                    @if ($var == 2)  
+                        top: 21px
+                    color: #007185
+                    font-size: 12px
+                    position: relative
+                    left: 20px
+                    text-decoration: none                   
+                    &:hover
+                        cursor: pointer
+                        color: #c7511f
+          
+    
+    @for $variable from 1 through 7
+        &__divcompleto#{$variable}           
+            width: 1259px
+            height: 300px
+            background-color: $Color-Blanco
+            
+            &--titulo1    
+                @include CartTitulo()
+                padding-bottom: 15px
+            &--contenedor1
+                
+                width: 1259px
+                @if ($variable == 3) 
+                    @include flexbox($gap: 17px)  
+                @else                                  
+                    @include flexbox($gap: 7px)
+                &_BotonFlecha
+                    background-color: $Color-Blanco
+                    color: gray
+                    font-weight: 700
+                    font-size: 30px
+                    border: none
+                    padding: 20px 15px
+                    cursor: pointer
+                @if ($variable == 2)                     
+                    img
+                        object-fit: cover
+                        width:  186px
+                        height: 200px
+                @if ($variable == 4)                     
+                    img
+                        object-fit: cover
+                        width:  186px
+                        height: 200px
+
+.ContenedorInferior
+    width:  100%
+    height: 200px 
+    @include flexbox()
+    
+    
+    &__Contenedor1
+        
+        width: 100%
+        height: 150px
+        @include flexbox($direction: column, $gap: 6px)
+        border: 1px solid rgba(54, 54, 54, 0.2)
+        border-radius: 4px
+        &--Titulo1
+            font-size: 12px
+            color: $Color-Negro
+            font-weight: 600
+            
+        &--texto
+            font-size: 11px
+            color:  $Color-Negro
+            a
+                text-decoration: none
+                color: #007185
+        &--Boton1
+            width: 230px
+            font-weight: 700                     
+            text-shadow: 0 1px 0 #ffe093
+            border: none
+            background-position: -10px -170px   
+            background-image: url(https://m.media-amazon.com/images/S/sash/vfqcwUkuArEiwD2.png)
+            height: 28px
+            border-radius: 5px
+            color:  $Color-Negro
+            cursor: pointer
+.ContenedorGris
+    width: 100%
+    height: 55px
+    background-color: #37475a
+    cursor: pointer
+    @include flexbox()
+    span
+        font-size: 14px
+        font-weight: 600
+        text-align: center
+        
+                
+                    
+                    
+                    
+
+
+   
+
+            
+    
+   
+

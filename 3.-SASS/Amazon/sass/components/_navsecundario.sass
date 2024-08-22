@@ -1,0 +1,23 @@
+
+.NavSecundario
+    background-color: $Color-Secundario
+    height: 40px
+    @include flexbox($justify : left)
+    &__Div1
+        @include flexbox()
+        padding-left: 25px
+        &--img1
+            height: 20px
+        &--span1
+            @include NavS_MenuLetras()           
+            margin-left: 5px            
+    &__Div2        
+        width: 500px
+        &--menu 
+            @include flexbox($justify: space-evenly)
+            @include NavS_MenuLetras()
+            list-style: none      
+            
+            
+            
+            

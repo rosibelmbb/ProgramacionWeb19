@@ -1,0 +1,80 @@
+
+.NavPrincipal
+    height: 60px 
+    background-color: $Color-principal
+    @include flexbox($gap: 25px)
+    &__Div1
+        img
+            height: 30px
+            width: 100%
+    &__Div2
+        @include flexbox()
+        img 
+            height: 20px
+        &--span1
+            font-size: 12px
+        &--span2
+            font-size: 14px
+            font-weight: 700
+    &__Div3
+        @include flexbox()
+        &--Categ1
+            padding: 10px 5px
+            height: 40px
+            background-color: #e6e6e6
+            background-image: none
+            border: 1px solid #e6e6e6           
+            border-radius: 4px 0 0 4px
+            img
+                height: 10px
+            span
+                color:#666666
+                font-size: 12px
+
+
+        &--Categ2
+            input
+                width: 550px
+                padding: 11px 0px 11px 9px
+
+        &--Categ3           
+            button
+                cursor: pointer
+                background-color: #febd69
+                padding: 9px 9px
+                border-radius: 0 4px 4px 0
+                border: none                            
+                img
+                    height: 20px
+    &__Div4
+        &--img1
+            width: 15px          
+        &--img2
+            width: 15px
+    &__Div5
+        &--img1
+            width: 15px
+
+    @for $var from 1 through 7
+        .NavPrincipal__Div#{$var} 
+            cursor: pointer
+            
+    @for $var from 5 through 6
+        .NavPrincipal__Div#{$var} 
+            height:50px
+            @include flexbox($direction: column)
+            &--span1
+                @include NavP_fontsuperior()
+            &--span2
+                 @include NavP_fontinferior()
+    &__Div7
+        @include flexbox()        
+        height: 50px
+        &--img1
+            width: 45px
+            
+        &--span2
+            @include NavP_fontinferior()
+            margin-top: 13px
+                 
+            

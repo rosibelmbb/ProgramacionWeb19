@@ -1,0 +1,61 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: #FF0000;
+  font-size: 20px;
+}
+
+section {
+  height: 40px;
+  background-color: #FF0000;
+}
+section div {
+  background-color: #794c4c;
+}
+
+.button {
+  padding: 20px 10px;
+  text-decoration: none;
+}
+.button:hover {
+  background-color: yellow;
+  color: blank;
+}
+
+.miclass {
+  color: white;
+  background-color: blue;
+}
+
+.btn-aceptar {
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: red;
+}
+
+.btn-cancelar {
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: blue;
+}
+
+.padre {
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+}
+.padre__parrafo, .padre__parrafo2 {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

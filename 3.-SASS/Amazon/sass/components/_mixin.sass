@@ -1,0 +1,36 @@
+
+
+@mixin flexbox($direction : row, $justify : center, $align : center, $gap: 0px)
+    display: flex
+    flex-direction: $direction
+    justify-content: $justify
+    align-items: $align
+    gap: $gap
+
+@mixin NavP_fontsuperior()
+    font-size: 12px
+    color: $Color-Blanco
+
+@mixin NavP_fontinferior()
+    font-size: 14px
+    color: $Color-Blanco
+    font-weight: 700
+
+@mixin NavS_MenuLetras()
+    font-size: 13px
+    font-weight: 700
+
+@mixin CartTitulo()
+    color: $Color-Negro
+    font-weight: 700   
+    font-size: 21px
+    padding: 20px 20px
+
+@mixin ImgContenedor()
+    height: 100%
+    overflow: hidden
+    position: relative
+    width: 100%
+    
+
+    
