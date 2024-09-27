@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <!--Estilos -->
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <div class="w-screen h-screen bg-gradient-to-r from-cyan-500 to-blue-500 flex justify-center items-center">
+
+        
+        <div class="w-[500px] h-[400px] bg-white rounded-md flex flex-col justify-center items-center gap-2">            
+            <h1 class="font-bold text-2xl text-indigo-700">Mi Formulario</h1>
+
+        <!--Formulario-->
+            <form id="Formulario" action="" class="flex flex-col gap-3 items-center">
+            <!-- CORREO ELECTRONICO   -->
+                <div>
+                    <label for="email" class="font-semibold text-gray-600 text-sm block">Correo electronico:</label>
+                    <input type="email" id="email" name="email" class="border rounded-md shadow-md focus: border-indigo-700 focus:outline-none p-1 block w-96 mt-2">
+                    <p id="emailError" class="error-message">Mensaje de error</p>
+                </div>
+
+            <!--CONTRASEÑA-->
+
+                <div>
+                    <label for="password" class="font-semibold text-gray-600 text-sm block">Contraseña:</label>
+                    <input type="password" id="password" name="password" class="border rounded-md shadow-md focus: border-indigo-700 focus:outline-none p-1 block w-96 mt-2">
+                    <p id="passwordError" class="error-message">Mensaje de error</p>
+                </div>
+
+            <!--BOTON ENVIAR-->
+                <div>
+                    <button type="submit" class="text-white py-2 px-4 rounded-md bg-indigo-500">Iniciar Sesión</button>
+                </div>     
+            </form>             
+        </div>
+    </div>
+    <!--Script de JS-->
+    <script src="js/formulario.js"></script>
+</body>
+</html>

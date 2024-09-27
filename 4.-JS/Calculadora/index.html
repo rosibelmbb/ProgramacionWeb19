@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="h-screen w-screen bg-gradient-to-r from-violet-200 to-pink-200">
+
+
+        <div class="bg-white h-96 w-96 rounded absolute top-32 left-[450px] shadow-xl">
+            <h2 class="text-2xl font-bold text-center">Mi calculadora</h2>
+
+            <div class="mb-3 ml-2 w-[95%] bg-pink-300 text-white rounded border text-right  text-2xl p-0">
+                <input type="text" id="displayacum" disabled class="text-sm text-end text-pink-500 bg-transparent p-0">
+                <input type="text" id="display" disabled class="text-right bg-transparent">
+                
+            </div>
+
+
+            <div class="grid grid-cols-4 gap-[5px] mx-3">
+                <button onclick="clearDisplay()" class="bg-red-600 text-white font-bold py-3 px-2 rounded">C</button>
+                <button onclick="AddOperador('/')" class="bg-fuchsia-200 text-pink-600 font-bold py-3 px-2 rounded">/</button>
+                <button onclick="AddOperador('*')" class="bg-fuchsia-200 text-pink-600 font-bold py-3 px-4 rounded">*</button>
+                <button onclick="AddOperador('-')" class="bg-fuchsia-200 text-pink-600 font-bold py-3 px-5 rounded">-</button>
+
+                <button onclick="AddNumero('7')" class="bg-purple-100 text-pink-600 font-bold py-3 px-5 rounded">7</button>
+                <button onclick="AddNumero('8')" class="bg-purple-100 text-pink-600 font-bold py-3 px-5 rounded">8</button>
+                <button onclick="AddNumero('9')" class="bg-purple-100 text-pink-600 font-bold py-3 px-5 rounded">9</button>
+
+                <button onclick="AddOperador('+')" class="bg-fuchsia-200 text-pink-600 font-bold py-3 px-5 rounded row-span-2">+</button>
+                <button onclick="AddNumero('4')" class="bg-purple-100 text-pink-600 font-bold py-3 px-5 rounded">4</button>
+                <button onclick="AddNumero('5')" class="bg-purple-100 text-pink-600 font-bold py-3 px-5 rounded">5</button>
+                <button onclick="AddNumero('6')" class="bg-purple-100 text-pink-600 font-bold py-3 px-5 rounded">6</button>
+
+                <button onclick="AddNumero('1')" class="bg-purple-100 text-pink-600 font-bold py-3 px-5 rounded">1</button>
+                <button onclick="AddNumero('2')" class="bg-purple-100 text-pink-600 font-bold py-3 px-5 rounded">2</button>
+                <button onclick="AddNumero('3')" class="bg-purple-100 text-pink-600 font-bold py-3 px-5 rounded">3</button>
+                <button onclick="calculate()" class="bg-fuchsia-200 text-pink-600 font-bold py-3 px-5 rounded row-span-2">=</button>
+
+                <button onclick="addNumero('0')" class="bg-purple-100 text-pink-600 font-bold py-3 px-5 rounded col-span-2">0</button>
+                <button onclick="addNumero('.')" class="bg-fuchsia-200 text-pink-600 font-bold py-3 px-5 rounded">.</button>
+            
+        </div>
+
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+
+
+    
+
+
+<!-- SCRIPT JS   -->
+<script src="calculadora.js"></script>
+</body>
+</html>
